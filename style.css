@@ -1,0 +1,128 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* IMPORTANT FOR MOBILE */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  background: #0d2b52;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+.header {
+  padding: 20px;
+  text-align: center;
+}
+
+/* HERO / ABOUT */
+.hero,
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px;
+  flex-wrap: wrap;
+}
+
+.hero {
+  background: #f5d77a;
+  color: black;
+}
+
+.hero-img img,
+.about-img img {
+  width: 300px;
+  border-radius: 12px;
+}
+
+/* PROJECTS */
+.projects {
+  padding: 60px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: #123a6f;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.project-card img {
+  border-radius: 10px;
+}
+
+/* CONTACT */
+.contact {
+  padding: 60px;
+}
+
+.contact form {
+  max-width: 400px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: none;
+}
+
+.contact button {
+  width: 100%;
+  padding: 12px;
+  background: #f5d77a;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+
+  .hero,
+  .about {
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .hero-img img,
+  .about-img img {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .projects,
+  .contact {
+    padding: 30px;
+  }
+}
+

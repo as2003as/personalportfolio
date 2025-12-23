@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Portfolio</title>
+
+  <!-- VERY IMPORTANT FOR MOBILE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <h2>AZRA SAHITI</h2>
+  <p>Web Developer</p>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Portfolio</h1>
+    <p>Personal Portfolio Website</p>
+  </div>
+
+  <div class="hero-img">
+    <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2" alt="">
+  </div>
+</section>
+<!-- ABOUT -->
+<section class="about">
+  <div class="about-text">
+    <h2>About Me</h2>
+    <p>
+      I am a Computer Science & Engineering student passionate about web development.
+      I build modern, responsive websites.
+    </p>
+  </div>
+
+  <div class="about-img">
+    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="">
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects">
+  <h2>My Projects</h2>
+
+  <div class="project-grid">
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+      <h3>Personal Portfolio</h3>
+    </div>
+
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f">
+      <h3>Client Website</h3>
+    </div>
+
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984">
+      <h3>Smart Task Manager</h3>
+    </div>
+  </div>
+</section>
+<!-- CONTACT -->
+<section class="contact">
+  <h2>Contact Me</h2>
+
+  <form id="contactForm" action="contact.php" method="POST">
+    <input type="text" name="name" id="name" placeholder="Your Name">
+    <input type="email" name="email" id="email" placeholder="Your Email">
+    <textarea name="message" id="message" placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 Your Name
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
